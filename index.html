@@ -1,13 +1,491 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>template-1</title>
+    <meta
+      name="description"
+      content="Vedran Artisan — plaquiste, peintre, isolation intérieure et enduits décoratifs en Haute-Savoie. Des finitions haut de gamme pour des intérieurs d'exception."
+    />
+    <meta name="theme-color" content="#26231F" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Vedran Artisan — Plâtrerie, peinture & enduits d'exception" />
+    <meta
+      property="og:description"
+      content="Plaquiste et peintre en Haute-Savoie. Isolation intérieure et enduits décoratifs. Un savoir-faire au service des finitions soignées."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vedran Artisan — Plâtrerie, peinture & enduits d'exception · Haute-Savoie</title>
   </head>
   <body>
-    <div id="app"></div>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="#accueil" aria-label="Vedran Artisan — accueil">
+          <span class="brand__mark" aria-hidden="true">VA</span>
+          <span class="brand__text">
+            <span class="brand__name">Vedran Artisan</span>
+            <span class="brand__tagline">Plâtrerie &middot; Peinture &middot; Enduits</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navigation principale">
+          <button
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="menu-principal"
+          >
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__label">Menu</span>
+          </button>
+
+          <ul class="site-nav__list" id="menu-principal" data-nav-list>
+            <li><a href="#savoir-faire" data-nav-link>Savoir-faire</a></li>
+            <li><a href="#approche" data-nav-link>L'approche</a></li>
+            <li><a href="#realisations" data-nav-link>Réalisations</a></li>
+            <li><a href="#zone" data-nav-link>Zone d'intervention</a></li>
+            <li class="site-nav__cta">
+              <a href="#contact" class="btn btn--small" data-nav-link>Demander un devis</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="accueil">
+        <div class="container hero__inner">
+          <div class="hero__content" data-reveal>
+            <p class="eyebrow">Plaquiste &amp; peintre — Haute-Savoie</p>
+            <h1 class="hero__title">
+              Des intérieurs<br />façonnés avec <em>exigence</em>
+            </h1>
+            <p class="hero__lead">
+              De la cloison au dernier coup de pinceau, Vedran accompagne les projets
+              qui demandent un vrai souci du détail. Plâtrerie, peinture, isolation
+              intérieure et enduits décoratifs&nbsp;: un seul artisan, une finition
+              irréprochable.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn">Demander un devis</a>
+              <a href="#savoir-faire" class="btn btn--ghost">Découvrir le savoir-faire</a>
+            </div>
+            <ul class="hero__meta">
+              <li><strong>15 ans</strong> de métier</li>
+              <li><strong>Chantiers propres</strong> et respect des délais</li>
+              <li><strong>Matériaux nobles</strong> — chaux, stuc, béton ciré</li>
+            </ul>
+          </div>
+
+          <figure class="hero__media" data-reveal>
+            <img
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80"
+              alt="Intérieur épuré aux murs enduits, lumière naturelle rasante"
+              loading="eager"
+              width="1000"
+              height="1250"
+            />
+            <figcaption>Enduit à la chaux ciré — séjour, Annecy-le-Vieux</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES / SAVOIR-FAIRE ============ -->
+      <section class="section" id="savoir-faire">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="eyebrow">Savoir-faire</p>
+            <h2 class="section__title">Quatre métiers, une même main</h2>
+            <p class="section__intro">
+              Confier l'ensemble du second œuvre à un seul artisan, c'est garantir
+              la cohérence des finitions et un interlocuteur unique du premier
+              rendez-vous à la livraison.
+            </p>
+          </header>
+
+          <ol class="services">
+            <li class="service" data-reveal>
+              <span class="service__index">01</span>
+              <h3 class="service__title">Plâtrerie &amp; plaquisterie</h3>
+              <p>
+                Cloisons, doublages, plafonds et faux-plafonds. Créations de niches,
+                têtes de lit et coffrages sur mesure, avec des arêtes parfaitement
+                dressées.
+              </p>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__index">02</span>
+              <h3 class="service__title">Peinture intérieure</h3>
+              <p>
+                Préparation méticuleuse des supports, application en couches maîtrisées,
+                peintures haut de gamme et velours mats. Le résultat se juge en
+                lumière rasante.
+              </p>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__index">03</span>
+              <h3 class="service__title">Isolation intérieure</h3>
+              <p>
+                Isolation thermique et acoustique par l'intérieur&nbsp;: gain de confort,
+                factures allégées et sérénité, sans sacrifier les volumes.
+              </p>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__index">04</span>
+              <h3 class="service__title">Enduits décoratifs</h3>
+              <p>
+                Enduits à la chaux, stuc, béton ciré, tadelakt. Des surfaces vivantes,
+                minérales et durables pour les pièces qui méritent une signature.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ APPROCHE ============ -->
+      <section class="section section--dark" id="approche">
+        <div class="container approche">
+          <div class="approche__text" data-reveal>
+            <p class="eyebrow">L'approche</p>
+            <h2 class="section__title">Une exigence à chaque étape</h2>
+            <p class="section__intro">
+              Vedran travaille à taille humaine, pour un nombre limité de chantiers
+              à la fois. Chacun reçoit la même attention, du conseil sur les teintes
+              au nettoyage final.
+            </p>
+          </div>
+
+          <dl class="approche__list" data-reveal>
+            <div class="approche__item">
+              <dt>Écoute &amp; conseil</dt>
+              <dd>
+                Une visite sur place, des recommandations sur les matières et les
+                finitions, un devis clair et détaillé.
+              </dd>
+            </div>
+            <div class="approche__item">
+              <dt>Matériaux nobles</dt>
+              <dd>
+                Chaux, plâtre naturel, peintures sans solvants&nbsp;: des produits
+                sains, choisis pour tenir dans le temps.
+              </dd>
+            </div>
+            <div class="approche__item">
+              <dt>Chantier maîtrisé</dt>
+              <dd>
+                Protections soignées, poussière contenue, espaces rangés chaque
+                soir. On vit presque normalement pendant les travaux.
+              </dd>
+            </div>
+            <div class="approche__item">
+              <dt>Délais tenus</dt>
+              <dd>
+                Un planning annoncé et respecté, des points d'avancement réguliers,
+                aucune mauvaise surprise à la réception.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============ REALISATIONS ============ -->
+      <section class="section" id="realisations">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="eyebrow">Réalisations</p>
+            <h2 class="section__title">Quelques chantiers récents</h2>
+            <p class="section__intro">
+              Maisons de caractère, chalets et appartements haut de gamme en
+              Haute-Savoie et dans le Jura.
+            </p>
+          </header>
+
+          <ul class="gallery" data-gallery>
+            <li class="gallery__item gallery__item--tall" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                  alt="Séjour lumineux aux murs blanc mat et plafond parfaitement dressé"
+                  loading="lazy" width="900" height="1200"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Peinture</span>
+                  Séjour &amp; circulation — Veyrier-du-Lac
+                </span>
+              </button>
+            </li>
+            <li class="gallery__item" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1594940957055-11b52dad5cc4?auto=format&fit=crop&w=900&q=80"
+                  alt="Mur en béton ciré gris chaud dans une salle de bains"
+                  loading="lazy" width="900" height="700"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Béton ciré</span>
+                  Salle d'eau — Thonon-les-Bains
+                </span>
+              </button>
+            </li>
+            <li class="gallery__item" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=900&q=80"
+                  alt="Chambre avec tête de lit en plâtre et enduit taloché"
+                  loading="lazy" width="900" height="700"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Plâtrerie</span>
+                  Suite parentale — Chalet à Combloux
+                </span>
+              </button>
+            </li>
+            <li class="gallery__item gallery__item--wide" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+                  alt="Cuisine ouverte aux murs enduits à la chaux couleur sable"
+                  loading="lazy" width="1200" height="750"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Enduit à la chaux</span>
+                  Cuisine &amp; salle à manger — Lons-le-Saunier
+                </span>
+              </button>
+            </li>
+            <li class="gallery__item" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
+                  alt="Couloir avec doublage isolant et finition peinture veloutée"
+                  loading="lazy" width="900" height="700"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Isolation intérieure</span>
+                  Rénovation complète — La Roche-sur-Foron
+                </span>
+              </button>
+            </li>
+            <li class="gallery__item" data-reveal>
+              <button type="button" class="gallery__btn" data-lightbox>
+                <img
+                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80"
+                  alt="Entrée sombre avec enduit décoratif profond et éclairage indirect"
+                  loading="lazy" width="900" height="700"
+                />
+                <span class="gallery__caption">
+                  <span class="gallery__tag">Stuc</span>
+                  Entrée &amp; bureau — Annecy
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ TEMOIGNAGES ============ -->
+      <section class="section section--sable" id="temoignages">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="eyebrow">Ils ont fait appel à Vedran</p>
+            <h2 class="section__title">La parole aux clients</h2>
+          </header>
+
+          <ul class="quotes">
+            <li class="quote" data-reveal>
+              <blockquote>
+                « Un travail d'orfèvre sur les enduits à la chaux. Vedran a su
+                traduire exactement l'ambiance qu'on cherchait, et le chantier
+                est resté impeccable du début à la fin. »
+              </blockquote>
+              <p class="quote__author">Claire &amp; Antoine M.<span>Maison rénovée — Menthon-Saint-Bernard</span></p>
+            </li>
+            <li class="quote" data-reveal>
+              <blockquote>
+                « Ponctuel, méticuleux, de bon conseil sur les teintes. Les
+                finitions peinture sont parfaites, même en pleine lumière. »
+              </blockquote>
+              <p class="quote__author">Sébastien R.<span>Appartement — Annecy centre</span></p>
+            </li>
+            <li class="quote" data-reveal>
+              <blockquote>
+                « Il s'est déplacé jusqu'à Lons sans que ce soit un problème.
+                Sérieux, propre, et un vrai goût du détail. On recommande. »
+              </blockquote>
+              <p class="quote__author">Famille D.<span>Chalet — Jura</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ZONE ============ -->
+      <section class="section" id="zone">
+        <div class="container zone">
+          <div class="zone__text" data-reveal>
+            <p class="eyebrow">Zone d'intervention</p>
+            <h2 class="section__title">La Haute-Savoie, et un peu au-delà</h2>
+            <p class="section__intro">
+              Vedran intervient sur l'ensemble du bassin annécien et du Chablais,
+              avec des déplacements réguliers vers Lons-le-Saunier et le Jura pour
+              les projets qui le méritent.
+            </p>
+            <p class="zone__note">
+              Un doute sur le secteur&nbsp;?
+              <a href="#contact">Écrivez-lui</a>, il vous répond sous 48&nbsp;h.
+            </p>
+          </div>
+
+          <div class="zone__cols" data-reveal>
+            <div>
+              <h3 class="zone__col-title">Secteur principal — Haute-Savoie</h3>
+              <ul class="zone__list">
+                <li>Annecy &amp; couronne</li>
+                <li>Veyrier-du-Lac, Menthon, Talloires</li>
+                <li>La Roche-sur-Foron, Bonneville</li>
+                <li>Thonon-les-Bains, Évian, Chablais</li>
+                <li>Cluses, vallée de l'Arve</li>
+                <li>Megève, Combloux, Praz-sur-Arly</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="zone__col-title">Déplacements — Jura</h3>
+              <ul class="zone__list">
+                <li>Lons-le-Saunier</li>
+                <li>Communes alentour du Revermont</li>
+                <li>Projets haut de gamme sur devis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section--dark" id="contact">
+        <div class="container contact">
+          <div class="contact__intro" data-reveal>
+            <p class="eyebrow">Contact</p>
+            <h2 class="section__title">Parlons de votre projet</h2>
+            <p class="section__intro">
+              Décrivez votre chantier en quelques lignes. Vedran vous recontacte
+              pour convenir d'une visite et vous adresser un devis détaillé.
+            </p>
+
+            <ul class="contact__direct">
+              <li>
+                <span>Téléphone</span>
+                <a href="tel:+33600000000">06 00 00 00 00</a>
+              </li>
+              <li>
+                <span>E-mail</span>
+                <a href="mailto:contact@vedran-artisan.fr">contact@vedran-artisan.fr</a>
+              </li>
+              <li>
+                <span>Base</span>
+                <p>Haute-Savoie (74) — déplacements Jura</p>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" data-form novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" autocomplete="name" required />
+                <p class="field__error" data-error-for="nom"></p>
+              </div>
+              <div class="field">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" autocomplete="tel" />
+                <p class="field__error" data-error-for="telephone"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+
+            <div class="field">
+              <label for="projet">Type de projet</label>
+              <select id="projet" name="projet" required>
+                <option value="">Choisir…</option>
+                <option>Plâtrerie / plaquisterie</option>
+                <option>Peinture intérieure</option>
+                <option>Isolation intérieure</option>
+                <option>Enduits décoratifs</option>
+                <option>Rénovation complète</option>
+                <option>Autre / je ne sais pas encore</option>
+              </select>
+              <p class="field__error" data-error-for="projet"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Votre projet</label>
+              <textarea id="message" name="message" rows="5" required
+                placeholder="Surfaces concernées, état actuel, échéance souhaitée, commune…"></textarea>
+              <p class="field__error" data-error-for="message"></p>
+            </div>
+
+            <button type="submit" class="btn btn--light">Envoyer la demande</button>
+
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+            <p class="form__note">
+              Démonstration&nbsp;: ce formulaire n'envoie pas encore de message.
+              Le raccordement à une boîte mail se fait à la mise en ligne.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <span class="brand__mark" aria-hidden="true">VA</span>
+          <p>
+            <strong>Vedran Artisan</strong><br />
+            Plâtrerie, peinture, isolation &amp; enduits décoratifs — Haute-Savoie
+          </p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Pied de page">
+          <a href="#savoir-faire">Savoir-faire</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#zone">Zone d'intervention</a>
+          <a href="#contact">Devis</a>
+          <a href="#" data-legal>Mentions légales</a>
+        </nav>
+
+        <p class="site-footer__legal">
+          © <span data-year>2026</span> Vedran Artisan — Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" data-lightbox-root hidden>
+      <button type="button" class="lightbox__close" data-lightbox-close aria-label="Fermer">&times;</button>
+      <figure class="lightbox__figure">
+        <img src="" alt="" data-lightbox-img />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
