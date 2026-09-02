@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#1c1f1d" />
+  <rect x="6" y="6" width="52" height="3" fill="#7c8c70" />
+  <text x="32" y="43" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif"
+    font-size="34" fill="#fcfcfa" letter-spacing="1">VA</text>
+</svg>
